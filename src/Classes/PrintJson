@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Classes;
+
+/**
+ * Class to organize the trip
+ *
+ * @author tiagofinger
+ */
+class PrintJson implements \App\Classes\Interfaces\Printer
+{
+    /**
+     * Get all boarding passes JSON
+     * @return JSON
+     */
+    public function print(array $arrData)
+    {
+        return json_encode($arrayData, JSON_FORCE_OBJECT);
+    }
+}
