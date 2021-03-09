@@ -15,6 +15,6 @@ class PrintJson implements \App\Classes\Interfaces\Printer
      */
     public function print(array $arrData)
     {
-        return json_encode($arrayData, JSON_FORCE_OBJECT);
+        return json_encode($arrData, JSON_FORCE_OBJECT);
     }
 }
