@@ -10,6 +10,7 @@ use App\Classes\Airplane;
 use App\Classes\Car;
 use App\Classes\Driver;
 use App\Classes\Airport;
+use App\Classes\PrintJson;
 
 $boardingPass1 = BoardingPassFactory::create(
     'F',
@@ -76,5 +77,3 @@ $tripPlanner->add($boardingPass4);
 
 $tripPlanner->organize();
 echo $tripPlanner;
-
-//var_dump($tripPlanner->getAllJson());
