@@ -41,26 +41,11 @@ class TripPlannerTest extends TestCase
                 . '<p><b>Transport:</b> </p><p><b>Driver:</b> </p>'
                 . '<p><b>Date:</b> </p><p><b>Time:</b> </p><hr />');
     }
-
-    public function testIsJson()
-    {
-        $boardingPass = new BoardingPassSimple(new City('Roma'), new City('London'));
-        $tripPlanner = new TripPlanner();
-        $tripPlanner->add($boardingPass);
-
-        $this->assertJson($tripPlanner->getAllJson());
-    }
     
     public function testHasMethodGetAll()
     {
         $tripPlanner = new TripPlanner();
         $this->assertTrue(method_exists($tripPlanner, 'getAll'));
-    }
-    
-    public function testHasMethodGetAllJson()
-    {
-        $tripPlanner = new TripPlanner();
-        $this->assertTrue(method_exists($tripPlanner, 'getAllJson'));
     }
 
     public function testHasMethodAdd()
