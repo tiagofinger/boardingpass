@@ -8,5 +8,5 @@ namespace App\Classes\Interfaces;
  */
 interface Printer 
 {
-    public function print(Array $data);
+    public function print(array $data);
 }
