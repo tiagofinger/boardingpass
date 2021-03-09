@@ -11,6 +11,7 @@ class PrintJson implements \App\Classes\Interfaces\Printer
 {
     /**
      * Get all boarding passes JSON
+     * @param Array arrData
      * @return JSON
      */
     public function print(array $arrData)
