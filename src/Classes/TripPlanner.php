@@ -60,20 +60,6 @@ class TripPlanner implements \App\Classes\Interfaces\ToString
     }
 
     /**
-     * Get all boarding passes JSON
-     * @return JSON
-     */
-    public function getAllJson()
-    {
-        $arrayData = [];
-        foreach ($this->boardingPasses as $i => $boardingPasses) {
-            $arrayData[$i] = $boardingPasses->getData();
-        }
-
-        return json_encode($arrayData, JSON_FORCE_OBJECT);
-    }
-
-    /**
      * Get all boarding passes array
      * @return [
      */
